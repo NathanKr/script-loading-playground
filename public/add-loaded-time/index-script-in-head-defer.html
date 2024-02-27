@@ -3,11 +3,11 @@
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Critical Path: Script</title>
+    <script defer src="app.js"></script>
   </head>
   <body>
-    <p style="color:green">script in body marked async. loaded time is shown , script not blocking so expect better page load time : score 90 vs 88</p>
+    <p style="color:red">script in head but using defer so will invoke when dom is ready</p>
     <p>Hello <span>web performance</span> students!</p>
     <div><img src="../images/lion.jpg" width="256" height="162" /></div>
-    <script src="app.js" async></script>
   </body>
 </html>

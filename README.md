@@ -4,7 +4,7 @@ Script loading can have significat imapct on page loading. This is part of my ne
 <h2>leading questions</h2>
 <ul>
 <li>async vs defer vs blocking (default) and use cases</li>
-<li>preload vs prefetch and use cases</li>
+<li>preload vs prefetch and use cases --> not directly with scripts</li>
 <li>does it refer also to css file </li>
 <li>good samples to make me feel what is going on</li>
 </ul>

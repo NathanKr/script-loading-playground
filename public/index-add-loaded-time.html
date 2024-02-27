@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Critical Path: Script</title>
+  </head>
+  <body>
+    <p style="color: orange">
+      script order is important. move it to head and it will not work properly because the script alter the dom which on head is not ready yet
+    </p>
+    <p>Hello <span>web performance</span> students!</p>
+    <div><img src="/public/images/lion.jpg" width="256" height="162" /></div>
+    <script>
+      // add loaded time
+      const span = document.getElementsByTagName("span")[0];
+      span.textContent = "interactive"; // change DOM text content
+      span.style.display = "inline"; // change CSSOM property
+      // create a new element, style it, and append it to the DOM
+      const loadTime = document.createElement("div");
+      loadTime.textContent = "You loaded this page on: " + new Date();
+      loadTime.style.color = "blue";
+      document.body.appendChild(loadTime);
+    </script>
+  </body>
+</html>

@@ -5,11 +5,9 @@
     <title>Critical Path: Script</title>
   </head>
   <body>
-    <p style="color: orange">
-      Script order is important. Move it to head and it will not work properly because the script alter the dom which on head is not ready yet
-    </p>
+    <p style="color:orange">script in body. loaded time is shown but script blocking might cause performance issue</p>
     <p>Hello <span>web performance</span> students!</p>
-    <div><img src="./images/lion.jpg" width="256" height="162" /></div>
+    <div><img src="../images/lion.jpg" width="256" height="162" /></div>
     <script src="app.js"></script>
   </body>
 </html>

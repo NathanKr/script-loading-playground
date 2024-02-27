@@ -13,10 +13,11 @@ Script loading can have significat imapct on page loading. This is part of my ne
 simply load index.html
 
 <h2>Results</h2>
-<h3>async vs blocking (default)</h3>
+<h3>async vs vs defer blocking (default)</h3>
 check directory add-loaded-time
 <ul>
- <li>async provide better page load time because it is not blocking</li>
+ <li>defer provide better page load time compare to blocking because it is not blocking and it does perserve scripts order and does wait for dom to be ready - check index-script-in-head-defer</li>
+ <li>async provide better page load time compare to blocking because it is not blocking but it does not perserve scripts order and does not wait for dom to be ready - check index-script-last-in-body-async</li>
  <li>script in head might be too early - check index-script-in-head</li>
 </ul>
 
